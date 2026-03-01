@@ -1,1 +1,175 @@
 
+/* Gabungkan container dan image agar konsisten */
+.profile .avatar,
+.profile-avatar,
+.memberAvatar,
+.avatar-img-container,
+.profile .avatar img,
+.profile-avatar img,
+img.user-avatar,
+.memberAvatar img,
+.avatar-img {
+    width: 96px !important;
+    height: 96px !important;
+    min-width: 96px !important;
+    min-height: 96px !important;
+    border-radius: 50% !important;
+    -webkit-border-radius: 50% !important;
+    object-fit: cover !important;
+    border: 3px solid #ff69b4 !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+
+    /* --- TAMBAHAN EFEK GLOW --- */
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.7) !important; /* Glow statis */
+    transition: box-shadow 0.3s ease-in-out !important; /* Transisi halus saat di-hover */
+}
+/* Opsional: Efek glow lebih kuat saat kursor diarahkan (hover) */
+.profile-avatar:hover, 
+img.user-avatar:hover, 
+.avatar-img:hover {
+    box-shadow: 0 0 25px rgba(255, 105, 180, 1) !important;
+}
+.panel .panel-heading,
+.card-header,
+.sectionHeader,
+.profileSection h3,
+.panel-heading,
+.contentBox .title,
+.module .title {
+  background: linear-gradient(180deg,#ff85c1,#e2d1f9) !important; /* color of title header */
+  color: #fff !important;
+  padding: 10px 14px !important;
+  border-radius: 999px !important; /* round corners */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5) !important;
+}
+
+.profile .panel,
+.profile .module,
+.profile .box,
+.card,
+.contentBox {
+  transition: 
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    background 0.22s ease !important;
+  will-change: transform;
+}
+
+/* Hover effect */
+.profile .panel:hover,
+.profile .module:hover,
+.profile .box:hover,
+.card:hover,
+.contentBox:hover {
+  transform: translateY(-4px) scale(1.015) !important;
+
+  box-shadow:
+    0 0 25px rgba(255,255,255,0.6),
+    0 0 55px rgba(255,255,255,0.35),
+    0 20px 45px rgba(80,100,140,0.12) !important;
+}
+
+/* Slightly stronger glow for larger panels */
+.profile .panel:hover {
+  box-shadow:
+    0 0 35px rgba(255,255,255,0.65),
+    0 0 75px rgba(255,255,255,0.4),
+    0 25px 60px rgba(80,100,140,0.14) !important;
+}
+.panel .panel-heading,
+.card-header,
+.sectionHeader,
+.profileSection h3,
+.panel-heading,
+.contentBox .title,
+.module .title {
+  text-shadow:
+    0 0 6px rgba(255,255,255,0.9),
+    0 0 14px rgba(255,255,255,0.8),
+    0 0 24px rgba(220,230,255,0.7),
+    0 0 36px rgba(200,215,255,0.5),
+    0 0 48px rgba(180,200,255,0.35);
+}
+
+
+.mz-condensed-inline {
+  width:100%;
+  max-width:860px;
+  margin:10px auto;
+  padding:12px;
+  border-radius:18px;
+  background: rgba(255,255,255,0.22); /* color of background panel*/ 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border:1px solid rgba(199,207,230,0.26);
+  box-shadow:0 12px 30px rgba(143,162,204,0.05);
+  box-sizing:border-box;
+}
+
+.mz-condensed-inline .mz-header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:10px;
+}
+
+.mz-condensed-inline .mz-title {
+  background:linear-gradient(180deg,#9aaed3,#7f94c0);
+  color:#fff;
+  padding:8px 14px;
+  border-radius:999px;
+  font-weight:700;
+}
+
+.mz-condensed-inline .mz-grid {
+  display:grid;
+  grid-template-columns: repeat(3, minmax(140px, 1fr));
+  gap:10px;
+}
+
+.mz-condensed-inline .mz-item {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:8px 10px;
+  border-radius:12px;
+  background: linear-gradient(180deg,#ffffff,#eef3ff);
+  border:1px solid rgba(199,207,230,0.6);
+  text-decoration:none;
+  font-weight:600;
+  color:#3b5b88;
+  min-height:44px;
+}
+
+.mz-condensed-inline .mz-icon {
+  width:36px;
+  height:36px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#eef6ff;
+  font-size:15px;
+}
+
+/* 1. Custom Image Background */
+body {
+    background-image: url(https://cdn.discordapp.com/attachments/1468971390089691136/1475489315357196420/AdekPC.png?ex=699dac02&is=699c5a82&hm=b8bccfd5e19bf6f13a5c490952e6827ea2fc7a7eddce3334d6efdd575b0f06cd);
+    background-size: cover; /* This makes the image fill the whole screen */
+    background-attachment: fixed; /* Keeps the background still while you scroll */
+    background-position: center;
+    color: #d63384;
+}
+
+/* 1. Custom Image Background */
+body {
+    background-image: url(https://cdn.discordapp.com/attachments/1468971390089691136/1475489315357196420/AdekPC.png?ex=699dac02&is=699c5a82&hm=b8bccfd5e19bf6f13a5c490952e6827ea2fc7a7eddce3334d6efdd575b0f06cd);
+    background-size: cover; /* This makes the image fill the whole screen */
+    background-attachment: fixed; /* Keeps the background still while you scroll */
+    background-position: center;
+    color: #d63384;
+* {
+  cursor: url('https://cdn.cursors-4u.net/previews/cute-polka-dotted-magenta-bow-tie-ribbon-dd6d68dc-32.webp') 32 32, auto !important;
+}
+
